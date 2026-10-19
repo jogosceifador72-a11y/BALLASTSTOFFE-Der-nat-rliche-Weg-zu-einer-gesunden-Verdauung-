@@ -1,0 +1,6 @@
+{
+  "name": "BALLASTSTOFFE – Der natürliche Weg zu einer gesunden Verdauung",
+  "description": "Offizielle Verkaufsseite für den 30-seitigen PDF-Praxisleitfaden für eine gesunde Verdauung mit einfachen Alltagsgewohnheiten.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

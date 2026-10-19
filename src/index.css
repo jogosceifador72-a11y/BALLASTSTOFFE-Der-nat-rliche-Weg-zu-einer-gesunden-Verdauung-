@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-forest-950: #0a1910;
+  --color-forest-900: #12281a;
+  --color-forest-800: #1b3825;
+  --color-forest-700: #254d33;
+  --color-forest-600: #336645;
+  --color-sand-50: #faf8f5;
+  --color-sand-100: #f4f0e6;
+  --color-sand-200: #e8e1d3;
+  --color-sand-300: #d6ccb8;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F5F1E8;
+  color: #2D372E;
+  background-image: 
+    radial-gradient(at 15% 10%, rgba(42, 82, 55, 0.07) 0px, transparent 55%),
+    radial-gradient(at 85% 25%, rgba(198, 140, 75, 0.06) 0px, transparent 50%),
+    radial-gradient(at 20% 65%, rgba(35, 75, 48, 0.05) 0px, transparent 50%),
+    radial-gradient(at 80% 85%, rgba(185, 125, 60, 0.05) 0px, transparent 55%);
+  background-attachment: fixed;
+}
+
+.font-serif-heading {
+  font-family: var(--font-serif);
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-7px) rotate(0.4deg);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 6s ease-in-out infinite;
+}
+
+/* Glass card styling with organic warmth */
+.luxury-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(220, 212, 198, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(22, 44, 30, 0.07), 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.luxury-card-dark {
+  background: linear-gradient(145deg, #162C1E 0%, #0F2015 100%);
+  border: 1px solid rgba(52, 102, 69, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(10, 25, 16, 0.4);
+}
